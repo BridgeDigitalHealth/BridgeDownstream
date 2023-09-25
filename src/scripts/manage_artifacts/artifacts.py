@@ -89,9 +89,9 @@ def list_refs(cfn_bucket):
 def main():
   args = read_args()
   if args.environment == "prod":
-    cfn_bucket = "sceptre-cloudformation-bucket-bucket-10mwvvuhlvtk9"
+    cfn_bucket = "bootstrap-awss3cloudformationbucket-zov6lb1ge7ll"
   else:
-    cfn_bucket = "sceptre-cloudformation-bucket-bucket-65ci2qog5w6l"
+    cfn_bucket = "bootstrap-awss3cloudformationbucket-1apwoyafo211z"
   if args.upload:
     upload(ref=args.ref, cfn_bucket=cfn_bucket)
   elif args.remove:
